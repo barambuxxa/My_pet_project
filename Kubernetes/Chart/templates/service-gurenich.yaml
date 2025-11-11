@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}-service
+  name: {{ .Values.service.name }}
 #Выбираем с какими подами будем работать, настраиваем порты и тип сервиса
 spec:
   selector:
